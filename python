@@ -1,0 +1,73 @@
+Q.1 Write a Python program to convert kilometers to miles?
+Ans:-
+Here's a Python program that converts kilometers to miles
+def conver_to_miles(km):
+    miles=km*0.621
+    return miles
+km=float(input("your km is:"))
+miles=conver_to_miles(km)
+print("Your miles is",miles)
+
+Q.2 Write a Python program to convert Celsius to Fahrenheit?
+Ans:-
+Here is program which will take values as celcius and provide output as farenheit.
+def convert_to_fareheit(celsius):
+    faren=(celsius*9/5)+32
+    return faren
+celsius=float(input("your celcius is:"))
+faren=convert_to_fareheit(celsius)
+print(faren)
+
+Q.3 Write a Python program to display calendar?
+Ans:-
+To display a calendar in Python, you can make use of the calendar module.
+import calendar
+month=int(input("your month(1-12)"))
+year=int(input("your year is:"))
+print(calendar.month(year, month))
+
+Q.4 Write a Python program to solve quadratic equation?
+Ans:-
+Here's a Python program that solves a quadratic equation
+import cmath
+def solve_quadratic(a, b, c):
+    discriminant = (b ** 2) - (4 * a * c)
+
+    solution1 = (-b - cmath.sqrt(discriminant)) / (2 * a)
+    solution2 = (-b + cmath.sqrt(discriminant)) / (2 * a)
+
+    return solution1, solution2
+
+a = float(input("Enter the coefficient of x^2: "))
+b = float(input("Enter the coefficient of x: "))
+c = float(input("Enter the constant term: "))
+solution1, solution2 = solve_quadratic(a, b, c)
+print(f"The solutions are: {solution1} and {solution2}")
+
+Q.5 Write a Python program to swap two variables without temp variable?
+Ans:-
+Here's an example program that demonstrates this approach
+def swap_variables(a, b):
+    a, b = b, a
+    return a, b
+var1 = input("Enter the value of the first variable: ")
+var2 = input("Enter the value of the second variable: ")
+print("Original values:")
+print(f"Variable 1: {var1}")
+print(f"Variable 2: {var2}")
+var1, var2 = swap_variables(var1, var2)
+print("\nAfter swapping:")
+print(f"Variable 1: {var1}")
+print(f"Variable 2: {var2}")
+
+#and output will be as below 
+Enter the value of the first variable:  rajendra
+Enter the value of the second variable:  pandey
+Original values:
+Variable 1: rajendra
+Variable 2: pandey
+
+After swapping:
+Variable 1: pandey
+Variable 2: rajendra
+
